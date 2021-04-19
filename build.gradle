@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'commons-cli:commons-cli:1.4'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+    
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'it.lucaneg.mvncrawler.MVNCrawler'
+}
